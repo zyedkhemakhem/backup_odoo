@@ -1,0 +1,25 @@
+Ce script de python permet de restaurer une base de donnée .zip ou bien .dump dans le ERP odoo (assurer vous bien que vous avez le Backup file )
+
+
+vous avez besoin d'avoir un contenaire contenant odoo et un autre contenaire contenant postgres qui sont connecté entré eux
+
+
+
+
+
+pour excuter ce script , ourvrez le terminal et tapez : 
+python3 test.py --odoo_container *nom du contenaire odoo* --database_container *nom du contenaire postgres* --newdatabase *nom de la nouvelle database*  --olddatabase *nom de l'ancienne database* --masterpassword *le master password*
+assurer vous bien de changer chaque champ qui est entouré par des * avec le nom approprié
+
+
+
+**********pour le fichier . dump******
+	assurer vous bien d'avoir le fichier .dump dans le dossier ./backup qui est déja mounté dans le contenaire en : /mnt/backup
+**********pour le fichier.zip******
+	assruer vous bien d'avoir le ficher .zip dans la répératoire home 
+	
+j'espere que ce script vous plait
+si vous avez des questions , n'hesitez pas a me contacter a travers :
+mon profil linkedin : https://www.linkedin.com/in/zyedkhemakhem/
+github : https://github.com/zyedkhemakhem
+
